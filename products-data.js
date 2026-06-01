@@ -4,6 +4,9 @@
 window.MedFactoryCatalog = (function () {
   "use strict";
 
+  /** Must match the on-disk folder name exactly (lowercase `images` for Linux / GitHub Pages). */
+  const IMAGE_DIR = "images";
+
   const CATEGORIES = {
     all: { label: "All products", slug: "all" },
     "dummy-heads": { label: "Dummy Heads", slug: "dummy-heads" },
@@ -477,6 +480,7 @@ window.MedFactoryCatalog = (function () {
   }
 
   return {
+    IMAGE_DIR,
     CATEGORIES,
     PRODUCTS,
     getById,

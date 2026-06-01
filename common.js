@@ -9,22 +9,34 @@ window.MedFactory = (function () {
       return path;
     }
 
-    const base = window.MF_BASE_PATH || "";
-    const normalized = path.replace(/^\.?\//, "");
+    let normalized = path.trim();
+    if (normalized.startsWith("/images/")) {
+      normalized = normalized.slice(1);
+    }
+    normalized = normalized.replace(/^\.?\//, "");
 
+    const base = window.MF_BASE_PATH || "";
     if (!base) return normalized;
 
     return base.endsWith("/") ? base + normalized : `${base}/${normalized}`;
   }
 
   function fixAssetPaths() {
-    document.querySelectorAll("img[src]").forEach((img) => {
-      const src = img.getAttribute("src");
-      if (!src || /^https?:\/\//i.test(src) || src.startsWith("data:")) return;
+    const fixAttr = (el, attr) => {
+      const value = el.getAttribute(attr);
+      if (!value || /^https?:\/\//i.test(value) || value.startsWith("data:")) {
+        return;
+      }
+      const fixed = resolveAsset(value);
+      if (fixed !== value) el.setAttribute(attr, fixed);
+    };
 
-      const fixed = resolveAsset(src);
-      if (fixed !== src) img.src = fixed;
-    });
+    document.querySelectorAll("img[src]").forEach((el) => fixAttr(el, "src"));
+    document.querySelectorAll("source[src]").forEach((el) => fixAttr(el, "src"));
+    document.querySelectorAll("video[src]").forEach((el) => fixAttr(el, "src"));
+    document.querySelectorAll("link[rel*='icon'][href]").forEach((el) =>
+      fixAttr(el, "href")
+    );
   }
 
   const prefersReducedMotion = window.matchMedia(

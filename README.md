@@ -41,7 +41,9 @@ Real product photos live in `images/` (sourced from your uploads).
 
 ### Git / GitHub Pages
 
-Images only appear on GitHub if the `images/` folder is **committed and pushed**:
+**Important:** Product photos must live in the lowercase folder `images/` (not `IMG`). Linux hosting is case-sensitive.
+
+Commit and push images with the site:
 
 ```bash
 git add images/
@@ -52,7 +54,9 @@ git push
 
 In the repo: **Settings → Pages → Deploy from branch** (usually `main`, folder `/` root).
 
-For project sites (`https://USER.github.io/REPO-NAME/`), `base-path.js` sets the correct base URL so `images/*.jpg` load correctly.
+For project sites (`https://USER.github.io/REPO-NAME/`), `base-path.js` injects `<base href="/REPO-NAME/">` so `images/*.jpg`, CSS, and JS load correctly.
+
+Full audit: see `GITHUB_PAGES_ASSETS.md`.
 
 Required image files (referenced by the site):
 
