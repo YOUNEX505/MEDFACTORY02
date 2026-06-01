@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dental student training model — specifications and simulation features from MedFactory.">
+  <meta name="author" content="MedFactory">
+  <meta name="theme-color" content="#0F172A">
+  <meta property="og:type" content="product">
+  <title>Training Model — MedFactory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json" id="product-schema"></script>
+</head>
+<body class="header-solid page-product" data-i18n-title="meta.title.product" data-i18n-desc="meta.desc.product">
+  <a href="#main" class="skip-link" data-i18n="skip">Skip to main content</a>
+
+  <div class="announcement" role="region" data-i18n-aria="announcement.region">
+    <p data-i18n="announcement">Free delivery on training orders over <strong>EGP 1,500</strong> · Ships to students nationwide</p>
+    <button class="announcement__close" type="button" data-i18n-aria="announcement.dismiss">&times;</button>
+  </div>
+
+  <header class="header is-scrolled" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo" data-i18n-aria="nav.home">
+        <span class="logo__med">Med</span><span class="logo__factory">Factory</span>
+      </a>
+      <nav class="nav" id="nav" data-i18n-aria="nav.main">
+        <ul class="nav__list">
+          <li><a href="products.html" data-i18n="nav.shop">Shop</a></li>
+          <li><a href="index.html#categories" data-i18n="nav.categories">Categories</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          <li><a href="contact.html#faq" data-i18n="nav.faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <button class="icon-btn" type="button" data-search-open data-i18n-aria="nav.search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <a href="contact.html" class="icon-btn" data-i18n-aria="nav.contact">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </a>
+        <button class="icon-btn cart-btn" type="button" aria-label="Cart, 0 items">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-btn__count" aria-hidden="true">0</span>
+        </button>
+        <div class="lang-switch" role="group" data-i18n-aria="lang.label">
+          <button type="button" class="lang-switch__btn" data-lang="ar">عربي</button>
+          <button type="button" class="lang-switch__btn" data-lang="en">EN</button>
+        </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div id="pdp-not-found" class="pdp-not-found" hidden>
+      <div class="container">
+        <h1 data-i18n="product.notFound.title">Training model not found</h1>
+        <p data-i18n="product.notFound.sub">This item may have been removed or the link is incorrect.</p>
+        <a href="products.html" class="btn btn--primary btn--lg" data-i18n="product.notFound.cta">Back to shop</a>
+      </div>
+    </div>
+
+    <article id="pdp" class="pdp" hidden>
+      <div class="container">
+        <nav class="breadcrumb reveal" aria-label="Breadcrumb">
+          <ol id="breadcrumb"></ol>
+        </nav>
+
+        <div class="pdp__hero">
+          <div class="pdp-gallery reveal">
+            <div class="pdp-gallery__thumbs" id="gallery-thumbs" role="tablist" aria-label="Product images"></div>
+            <div class="pdp-gallery__main">
+              <div class="pdp-gallery__zoom" id="gallery-zoom">
+                <img id="gallery-main" src="" alt="" width="800" height="800">
+                <span class="pdp-gallery__hint" id="zoom-hint">Hover to zoom</span>
+              </div>
+              <button type="button" class="pdp-gallery__expand" id="gallery-expand" data-i18n-aria="product.gallery.expand">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="pdp-info reveal reveal--delay">
+            <p class="overline" id="pdp-category"></p>
+            <h1 id="pdp-title"></h1>
+            <div class="pdp-info__rating" aria-label="4.9 out of 5 stars">
+              <span class="stars" aria-hidden="true">★★★★★</span>
+              <span class="pdp-info__rating-text" data-i18n="product.rating.text">4.9 · Student-trusted</span>
+            </div>
+            <div class="pdp-info__price" id="pdp-price"></div>
+            <p class="pdp-info__desc" id="pdp-desc"></p>
+            <p class="pdp-info__sku" id="pdp-sku"></p>
+
+            <div class="pdp-info__stock" id="pdp-stock"></div>
+
+            <div class="pdp-qty">
+              <label for="qty" data-i18n="product.qty">Quantity</label>
+              <div class="pdp-qty__control">
+                <button type="button" id="qty-minus" data-i18n-aria="product.qty.minus">−</button>
+                <input type="number" id="qty" name="quantity" value="1" min="1" max="99" inputmode="numeric">
+                <button type="button" id="qty-plus" data-i18n-aria="product.qty.plus">+</button>
+              </div>
+            </div>
+
+            <div class="pdp-actions">
+              <button type="button" class="btn btn--primary btn--lg" id="btn-add-cart" data-i18n="btn.addCart">Add to cart</button>
+              <button type="button" class="btn btn--dark btn--lg" id="btn-buy-now" data-i18n="btn.buyNow">Buy now</button>
+            </div>
+
+            <a href="#" class="btn btn--whatsapp btn--lg" id="btn-whatsapp" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.89-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              <span data-i18n="btn.whatsapp.order">Order on WhatsApp</span>
+            </a>
+
+            <ul class="pdp-trust">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect width="16" height="13" x="4" y="5" rx="2"/><path d="m4 9 8 5 8-5"/></svg>
+                <span data-i18n="product.trust.delivery">Delivery across Egypt</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span data-i18n="product.trust.authentic">Authentic training-grade</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                <span data-i18n="product.trust.support">WhatsApp support before you buy</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <section class="pdp-section reveal" aria-labelledby="features-heading">
+          <h2 id="features-heading" data-i18n="product.features">Features</h2>
+          <ul class="pdp-features" id="pdp-features"></ul>
+        </section>
+
+        <section class="pdp-section pdp-section--surface reveal" aria-labelledby="specs-heading">
+          <h2 id="specs-heading" data-i18n="product.specs">Specifications</h2>
+          <div class="pdp-specs-wrap">
+            <table class="pdp-specs" id="pdp-specs">
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="pdp-section reveal" aria-labelledby="related-heading">
+          <header class="section-header section-header--row">
+            <div>
+              <h2 id="related-heading" data-i18n="product.related">Related products</h2>
+              <p data-i18n="product.related.sub">More from this category for your lab.</p>
+            </div>
+            <a href="products.html" class="link-arrow" id="related-category-link" data-i18n="product.viewCat">View category</a>
+          </header>
+          <div class="products__grid products__grid--shop" id="related-products"></div>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <div class="pdp-sticky" id="pdp-sticky" hidden>
+    <div class="container pdp-sticky__inner">
+      <div class="pdp-sticky__info">
+        <span class="pdp-sticky__price" id="sticky-price"></span>
+        <span class="pdp-sticky__name" id="sticky-name"></span>
+      </div>
+      <button type="button" class="btn btn--primary" id="sticky-add-cart" data-i18n="btn.addCart">Add to cart</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="logo logo--light" data-i18n-aria="nav.home">
+            <span class="logo__med">Med</span><span class="logo__factory">Factory</span>
+          </a>
+          <p data-i18n="footer.tagline">Realistic dental training models for students — practice safely before clinical work.</p>
+        </div>
+        <nav class="footer__col" data-i18n-aria="footer.shopNav">
+          <h3 data-i18n="footer.shop">Shop</h3>
+          <ul>
+            <li><a href="products.html?category=dummy-heads" data-i18n="products.filter.dummy">Dummy Heads</a></li>
+            <li><a href="products.html?category=endo-teeth" data-i18n="products.filter.endo">Endo Teeth</a></li>
+            <li><a href="products.html?category=dental-casts" data-i18n="products.filter.casts">Dental Casts</a></li>
+            <li><a href="products.html?category=dental-kits" data-i18n="products.filter.kits">Training Kits</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" data-i18n-aria="footer.supportNav">
+          <h3 data-i18n="footer.support">Support</h3>
+          <ul>
+            <li><a href="contact.html#faq" data-i18n="nav.faq">FAQ</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+            <li><a href="contact.html#location" data-i18n="footer.shipping">Shipping</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" data-i18n-aria="footer.connectNav">
+          <h3 data-i18n="footer.connect">Connect</h3>
+          <ul>
+            <li><a href="https://wa.me/201000000000" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__payments">
+        <span data-i18n="footer.payments">We accept</span>
+        <div class="footer__payment-icons" aria-hidden="true">
+          <span class="payment-badge">Visa</span>
+          <span class="payment-badge">Mastercard</span>
+          <span class="payment-badge">Fawry</span>
+          <span class="payment-badge">Wallet</span>
+        </div>
+        <span class="footer__secure" data-i18n="trust.secure">Secure checkout</span>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 MedFactory. <span data-i18n="footer.rights">All rights reserved.</span></p>
+        <div class="footer__legal">
+          <a href="#" data-i18n="footer.privacy">Privacy</a>
+          <a href="#" data-i18n="footer.terms">Terms</a>
+          <span class="footer__currency" data-i18n-aria="footer.currency">EGP</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" data-i18n-aria="product.lightbox" hidden>
+    <button type="button" class="lightbox__close" id="lightbox-close" data-i18n-aria="product.lightbox.close">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true" hidden>
+    <span id="toast-message">Added to cart</span>
+  </div>
+
+  <script src="i18n.js"></script>
+  <script src="theme.js"></script>
+  <script src="common.js"></script>
+  <script src="products-data.js"></script>
+  <script src="products-i18n.js"></script>
+  <script src="product.js"></script>
+</body>
+</html>

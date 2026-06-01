@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact MedFactory — WhatsApp support, product guidance, and nationwide shipping for dental students in Egypt.">
+  <meta name="keywords" content="MedFactory contact, dental training models Egypt, WhatsApp order">
+  <meta name="author" content="MedFactory">
+  <meta name="theme-color" content="#0F172A">
+  <meta property="og:title" content="Contact MedFactory">
+  <meta property="og:description" content="Message our team for training model advice, orders, and student support.">
+  <meta property="og:type" content="website">
+  <title>Contact — MedFactory</title>
+  <link rel="canonical" href="https://medfactory.eg/contact">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="header-solid page-contact" data-i18n-title="meta.title.contact" data-i18n-desc="meta.desc.contact">
+  <a href="#main" class="skip-link" data-i18n="skip">Skip to main content</a>
+
+  <div class="announcement" role="region" data-i18n-aria="announcement.region">
+    <p data-i18n="announcement">Free delivery on training orders over <strong>EGP 1,500</strong> · Ships to students nationwide</p>
+    <button class="announcement__close" type="button" data-i18n-aria="announcement.dismiss">&times;</button>
+  </div>
+
+  <header class="header is-scrolled" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo" data-i18n-aria="nav.home">
+        <span class="logo__med">Med</span><span class="logo__factory">Factory</span>
+      </a>
+      <nav class="nav" id="nav" data-i18n-aria="nav.main">
+        <ul class="nav__list">
+          <li><a href="products.html" data-i18n="nav.shop">Shop</a></li>
+          <li><a href="products.html" data-i18n="nav.categories">Categories</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="contact.html" aria-current="page" data-i18n="nav.contact">Contact</a></li>
+          <li><a href="contact.html#faq" data-i18n="nav.faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <button class="icon-btn" type="button" data-search-open data-i18n-aria="nav.search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button class="icon-btn cart-btn" type="button" aria-label="Cart, 0 items">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-btn__count" aria-hidden="true">0</span>
+        </button>
+        <div class="lang-switch" role="group" data-i18n-aria="lang.label">
+          <button type="button" class="lang-switch__btn" data-lang="ar">عربي</button>
+          <button type="button" class="lang-switch__btn" data-lang="en">EN</button>
+        </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu" data-i18n-aria="nav.menu.open">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="contact-hero" aria-labelledby="contact-hero-title">
+      <div class="contact-hero__media" aria-hidden="true">
+        <img src="images/dental-casts-kit.jpg" alt="" width="1600" height="900">
+        <div class="contact-hero__overlay"></div>
+      </div>
+      <div class="container contact-hero__content reveal">
+        <p class="overline overline--light" data-i18n="contact.hero.overline">We're here for your lab</p>
+        <h1 id="contact-hero-title" data-i18n="contact.hero.title">Talk to a team that speaks dental student.</h1>
+        <p class="contact-hero__lead" data-i18n="contact.hero.lead">Orders, product matching, shipping questions, or bulk faculty lists — reach us on WhatsApp for the fastest reply, or send a message below.</p>
+      </div>
+    </section>
+
+    <!-- Form + Sidebar -->
+    <section class="contact-main section" aria-labelledby="contact-form-heading">
+      <div class="container contact-main__grid">
+        <div class="contact-form-wrap reveal">
+          <header class="contact-form-wrap__header">
+            <p class="overline" data-i18n="contact.form.overline">Send a message</p>
+            <h2 id="contact-form-heading" data-i18n="contact.form.title">Contact form</h2>
+            <p data-i18n="contact.form.sub">We typically reply within a few hours during business days. Fields marked * are required.</p>
+          </header>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="contact-form__row">
+              <div class="form-field">
+                <label for="contact-name" data-i18n="contact.form.name">Full name *</label>
+                <input type="text" id="contact-name" name="name" required autocomplete="name" data-i18n-placeholder="contact.form.namePh">
+              </div>
+              <div class="form-field">
+                <label for="contact-phone" data-i18n="contact.form.phone">Phone / WhatsApp *</label>
+                <input type="tel" id="contact-phone" name="phone" required autocomplete="tel" inputmode="tel" data-i18n-placeholder="contact.form.phonePh">
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="contact-email" data-i18n="contact.form.email">Email</label>
+              <input type="email" id="contact-email" name="email" autocomplete="email" data-i18n-placeholder="contact.form.emailPh">
+            </div>
+            <div class="form-field">
+              <label for="contact-subject" data-i18n="contact.form.subject">Topic *</label>
+              <select id="contact-subject" name="subject" required>
+                <option value="" disabled selected data-i18n="contact.form.subjectPh">Select a topic</option>
+                <option value="order" data-i18n="contact.form.subjectOrder">Order &amp; checkout</option>
+                <option value="product" data-i18n="contact.form.subjectProduct">Product advice</option>
+                <option value="shipping" data-i18n="contact.form.subjectShipping">Shipping &amp; delivery</option>
+                <option value="bulk" data-i18n="contact.form.subjectBulk">Bulk / faculty order</option>
+                <option value="other" data-i18n="contact.form.subjectOther">Other</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="contact-message" data-i18n="contact.form.message">Message *</label>
+              <textarea id="contact-message" name="message" rows="5" required data-i18n-placeholder="contact.form.messagePh"></textarea>
+            </div>
+            <p class="contact-form__error" id="contact-form-error" role="alert" hidden></p>
+            <div class="contact-form__actions">
+              <button type="submit" class="btn btn--primary btn--lg" data-i18n="contact.form.submit">Send message</button>
+              <button type="button" class="btn btn--ghost" id="contact-wa-from-form" data-i18n="contact.form.submitWa">Send via WhatsApp instead</button>
+            </div>
+          </form>
+        </div>
+
+        <aside class="contact-aside reveal reveal--delay" data-i18n-aria="contact.aside">
+          <!-- WhatsApp CTA -->
+          <div class="contact-wa-card">
+            <div class="contact-wa-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.89-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <h3 data-i18n="contact.wa.title">Fastest: WhatsApp</h3>
+            <p data-i18n="contact.wa.sub">Share your year, faculty, and lab list — we'll recommend the right products in minutes.</p>
+            <a href="https://wa.me/201000000000?text=Hi%20MedFactory%2C%20I%20need%20help%20with%20an%20order." class="btn btn--whatsapp btn--lg" id="contact-wa-primary" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.89-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              <span data-i18n="btn.whatsapp">Chat on WhatsApp</span>
+            </a>
+            <p class="contact-wa-card__note" data-i18n="contact.wa.hours">Usually online Sun–Thu, 10:00–20:00 Cairo time</p>
+          </div>
+
+          <!-- Social -->
+          <div class="contact-social">
+            <h3 data-i18n="contact.social.title">Follow us</h3>
+            <ul class="contact-social__list">
+              <li>
+                <a href="https://instagram.com/" class="contact-social__link" target="_blank" rel="noopener noreferrer">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></svg>
+                  <span>Instagram</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://facebook.com/" class="contact-social__link" target="_blank" rel="noopener noreferrer">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                  <span>Facebook</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://tiktok.com/" class="contact-social__link" target="_blank" rel="noopener noreferrer">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+                  <span>TikTok</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick support cards -->
+          <ul class="contact-quick">
+            <li class="contact-quick__item">
+              <span class="contact-quick__label" data-i18n="contact.quick.email">Email</span>
+              <a href="mailto:support@medfactory.eg">support@medfactory.eg</a>
+            </li>
+            <li class="contact-quick__item">
+              <span class="contact-quick__label" data-i18n="contact.quick.phone">Phone</span>
+              <a href="tel:+201000000000">+20 100 000 0000</a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Location -->
+    <section class="contact-location section" id="location" aria-labelledby="location-heading">
+      <div class="container">
+        <header class="section-header section-header--center reveal">
+          <p class="overline" data-i18n="contact.location.overline">Visit &amp; pickup</p>
+          <h2 id="location-heading" data-i18n="contact.location.title">Our location in Greater Cairo</h2>
+          <p data-i18n="contact.location.sub">Nationwide delivery is our main channel — visit by appointment for bulk faculty orders or local pickup.</p>
+        </header>
+        <div class="contact-location__grid reveal">
+          <div class="contact-location__map" aria-hidden="true">
+            <iframe
+              title="MedFactory location on map"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=31.22%2C30.01%2C31.28%2C30.07&amp;layer=mapnik&amp;marker=30.0444%2C31.2357"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="contact-location__details">
+            <address class="contact-location__address">
+              <strong data-i18n="contact.location.name">MedFactory — Cairo Hub</strong><br>
+              <span data-i18n="contact.location.address">6th of October City, Giza Governorate, Egypt</span>
+            </address>
+            <ul class="contact-location__meta">
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                <span data-i18n="contact.location.hours">Sun–Thu: 10:00 – 20:00 · Fri–Sat: by appointment</span>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span data-i18n="contact.location.zone">Serving all governorates across Egypt</span>
+              </li>
+            </ul>
+            <a href="https://maps.google.com/?q=30.0444,31.2357" class="btn btn--secondary" target="_blank" rel="noopener noreferrer" data-i18n="contact.location.maps">Open in Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Support information -->
+    <section class="contact-support section" aria-labelledby="support-heading">
+      <div class="container">
+        <header class="section-header section-header--center reveal">
+          <p class="overline" data-i18n="contact.support.overline">Student support</p>
+          <h2 id="support-heading" data-i18n="contact.support.title">How we help you</h2>
+        </header>
+        <div class="contact-support__grid">
+          <article class="contact-support-card reveal">
+            <div class="contact-support-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3 data-i18n="contact.support.1.title">Product matching</h3>
+            <p data-i18n="contact.support.1.body">Send your year, faculty, and module — we'll map your lab list to the right dummy heads, endo teeth, or casts.</p>
+          </article>
+          <article class="contact-support-card reveal reveal--delay">
+            <div class="contact-support-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 5v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <h3 data-i18n="contact.support.2.title">Shipping &amp; tracking</h3>
+            <p data-i18n="contact.support.2.body">Cairo &amp; Giza typically 48h. Other governorates via trusted carriers — we'll share tracking once your order ships.</p>
+          </article>
+          <article class="contact-support-card reveal reveal--delay-2">
+            <div class="contact-support-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 data-i18n="contact.support.3.title">Quality guarantee</h3>
+            <p data-i18n="contact.support.3.body">Damaged on arrival? WhatsApp us within 48 hours with photos — replacement or refund for verified issues.</p>
+          </article>
+          <article class="contact-support-card reveal">
+            <div class="contact-support-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 data-i18n="contact.support.4.title">Bulk &amp; faculty orders</h3>
+            <p data-i18n="contact.support.4.body">Departments and student unions — ask for volume pricing and consolidated invoices for lab semesters.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq section" id="faq" aria-labelledby="contact-faq-heading">
+      <div class="container faq__wrap">
+        <header class="section-header section-header--center reveal">
+          <h2 id="contact-faq-heading" data-i18n="contact.faq.title">Contact FAQ</h2>
+          <p data-i18n="contact.faq.sub">Quick answers before you reach out.</p>
+        </header>
+
+        <div class="faq__list reveal" role="list">
+          <div class="faq-item" role="listitem">
+            <button class="faq-item__trigger" type="button" aria-expanded="false" id="cfaq-1-btn" aria-controls="cfaq-1-panel">
+              <span data-i18n="contact.faq.1.q">How fast do you reply on WhatsApp?</span>
+              <svg class="faq-item__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__panel" id="cfaq-1-panel" role="region" aria-labelledby="cfaq-1-btn" hidden>
+              <p data-i18n="contact.faq.1.a">During Sun–Thu business hours we usually respond within 1–2 hours. Evenings and weekends may take longer — your message is always queued.</p>
+            </div>
+          </div>
+          <div class="faq-item" role="listitem">
+            <button class="faq-item__trigger" type="button" aria-expanded="false" id="cfaq-2-btn" aria-controls="cfaq-2-panel">
+              <span data-i18n="contact.faq.2.q">Can I visit your warehouse?</span>
+              <svg class="faq-item__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__panel" id="cfaq-2-panel" role="region" aria-labelledby="cfaq-2-btn" hidden>
+              <p data-i18n="contact.faq.2.a">Yes, by appointment. Message us on WhatsApp with your preferred date — especially helpful for bulk pickups or inspecting dummy heads before a faculty order.</p>
+            </div>
+          </div>
+          <div class="faq-item" role="listitem">
+            <button class="faq-item__trigger" type="button" aria-expanded="false" id="cfaq-3-btn" aria-controls="cfaq-3-panel">
+              <span data-i18n="contact.faq.3.q">Will you help me choose products for my faculty?</span>
+              <svg class="faq-item__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__panel" id="cfaq-3-panel" role="region" aria-labelledby="cfaq-3-btn" hidden>
+              <p data-i18n="contact.faq.3.a">Absolutely. Share your year, university, and current module (operative, endo, prosthodontics). We'll recommend a starter kit or individual items that match typical Egyptian dental school lab lists.</p>
+            </div>
+          </div>
+          <div class="faq-item" role="listitem">
+            <button class="faq-item__trigger" type="button" aria-expanded="false" id="cfaq-4-btn" aria-controls="cfaq-4-panel">
+              <span data-i18n="contact.faq.4.q">How do I track my order?</span>
+              <svg class="faq-item__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__panel" id="cfaq-4-panel" role="region" aria-labelledby="cfaq-4-btn" hidden>
+              <p data-i18n="contact.faq.4.a">After dispatch we send tracking via SMS and WhatsApp. You can also reply to your order confirmation message anytime for a status update.</p>
+            </div>
+          </div>
+          <div class="faq-item" role="listitem">
+            <button class="faq-item__trigger" type="button" aria-expanded="false" id="cfaq-5-btn" aria-controls="cfaq-5-panel">
+              <span data-i18n="contact.faq.5.q">Do you offer student discounts or bulk pricing?</span>
+              <svg class="faq-item__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__panel" id="cfaq-5-panel" role="region" aria-labelledby="cfaq-5-btn" hidden>
+              <p data-i18n="contact.faq.5.a">Semester bundles and faculty-volume orders qualify for special rates. Contact us with quantities — we'll send a custom quote within one business day.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="logo logo--light" data-i18n-aria="nav.home">
+            <span class="logo__med">Med</span><span class="logo__factory">Factory</span>
+          </a>
+          <p data-i18n="footer.tagline">Everything a dental student needs for practical training in one place.</p>
+        </div>
+        <nav class="footer__col" data-i18n-aria="footer.shopNav">
+          <h3 data-i18n="footer.shop">Shop</h3>
+          <ul>
+            <li><a href="products.html?category=dummy-heads" data-i18n="products.filter.dummy">Dummy Heads</a></li>
+            <li><a href="products.html?category=endo-teeth" data-i18n="products.filter.endo">Endo Teeth</a></li>
+            <li><a href="products.html?category=dental-casts" data-i18n="products.filter.casts">Dental Casts</a></li>
+            <li><a href="products.html" data-i18n="products.filter.all">All products</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" data-i18n-aria="footer.companyNav">
+          <h3 data-i18n="footer.company">Company</h3>
+          <ul>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="contact.html#faq" data-i18n="nav.faq">FAQ</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" data-i18n-aria="footer.connectNav">
+          <h3 data-i18n="footer.connect">Connect</h3>
+          <ul>
+            <li><a href="https://wa.me/201000000000" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li><a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 MedFactory. <span data-i18n="footer.rights">All rights reserved.</span></p>
+        <div class="footer__legal">
+          <a href="#" data-i18n="footer.privacy">Privacy</a>
+          <a href="#" data-i18n="footer.terms">Terms</a>
+          <span class="footer__currency" data-i18n-aria="footer.currency">EGP</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true" hidden>
+    <span id="toast-message">Message sent</span>
+  </div>
+
+  <script src="i18n.js"></script>
+  <script src="theme.js"></script>
+  <script src="common.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>

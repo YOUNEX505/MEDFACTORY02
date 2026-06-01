@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop MedFactory dental training products — Dummy Heads, Endo Teeth, Dental Casts, and Dental Kits. Filter, search, and order with delivery across Egypt.">
+  <meta name="keywords" content="buy dummy head Egypt, endo teeth, dental casts, dental student kits">
+  <meta name="author" content="MedFactory">
+  <meta name="theme-color" content="#0F172A">
+  <meta property="og:title" content="Shop All Products — MedFactory">
+  <meta property="og:description" content="Premium dental training products for students. Browse by category with fast delivery across Egypt.">
+  <meta property="og:type" content="website">
+  <title>Shop All Products — MedFactory</title>
+  <link rel="canonical" href="https://medfactory.eg/products">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="header-solid page-products" data-i18n-title="meta.title.products" data-i18n-desc="meta.desc.products">
+  <a href="#main" class="skip-link" data-i18n="skip">Skip to main content</a>
+
+  <div class="announcement" role="region" data-i18n-aria="announcement.region">
+    <p data-i18n="announcement">Free delivery on training orders over <strong>EGP 1,500</strong> · Ships to students nationwide</p>
+    <button class="announcement__close" type="button" data-i18n-aria="announcement.dismiss">&times;</button>
+  </div>
+
+  <header class="header is-scrolled" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo" data-i18n-aria="nav.home">
+        <span class="logo__med">Med</span><span class="logo__factory">Factory</span>
+      </a>
+
+      <nav class="nav" id="nav" data-i18n-aria="nav.main">
+        <ul class="nav__list">
+          <li><a href="products.html" aria-current="page" data-i18n="nav.shop">Shop</a></li>
+          <li><a href="index.html#categories" data-i18n="nav.categories">Categories</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          <li><a href="contact.html#faq" data-i18n="nav.faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn" type="button" data-search-open data-i18n-aria="nav.search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <a href="contact.html" class="icon-btn" data-i18n-aria="nav.contact">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </a>
+        <button class="icon-btn cart-btn" type="button" aria-label="Cart, 0 items">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-btn__count" aria-hidden="true">0</span>
+        </button>
+        <div class="lang-switch" role="group" data-i18n-aria="lang.label">
+          <button type="button" class="lang-switch__btn" data-lang="ar">عربي</button>
+          <button type="button" class="lang-switch__btn" data-lang="en">EN</button>
+        </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container page-hero__inner reveal">
+        <p class="overline" data-i18n="products.page.overline">Student training models</p>
+        <h1 id="page-title" data-i18n="products.page.title">All products</h1>
+        <p class="page-hero__sub" data-i18n="products.page.sub">Dummy heads, endo practice teeth, dental casts, and typodont kits — educational simulation products for dental students in Egypt.</p>
+      </div>
+    </section>
+
+    <section class="shop" id="shop-main" data-i18n-aria="shop.main">
+      <div class="container shop__layout">
+        <aside class="shop-filters" id="filter-sidebar" data-i18n-aria="products.filters">
+          <div class="shop-filters__head">
+            <h2 data-i18n="products.categories">Categories</h2>
+            <button type="button" class="shop-filters__close" id="filter-close" data-i18n-aria="products.filters.close">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+            </button>
+          </div>
+          <div class="shop-filters__chips" role="group" data-i18n-aria="products.filters.chips">
+            <button type="button" class="filter-chip filter-chip--active" data-filter="all" aria-pressed="true" data-i18n="products.filter.all">All training models</button>
+            <button type="button" class="filter-chip" data-filter="dummy-heads" aria-pressed="false" data-i18n="products.filter.dummy">Dummy Heads</button>
+            <button type="button" class="filter-chip" data-filter="endo-teeth" aria-pressed="false" data-i18n="products.filter.endo">Endo Teeth</button>
+            <button type="button" class="filter-chip" data-filter="dental-casts" aria-pressed="false" data-i18n="products.filter.casts">Dental Casts</button>
+            <button type="button" class="filter-chip" data-filter="dental-kits" aria-pressed="false" data-i18n="products.filter.kits">Dental Kits</button>
+          </div>
+          <button type="button" class="link-clear" id="clear-filters" data-i18n="products.clear">Clear all filters</button>
+          <button type="button" class="btn btn--primary shop-filters__apply" id="filter-apply" data-i18n="products.show">Show results</button>
+        </aside>
+
+        <div class="filter-overlay" id="filter-overlay" aria-hidden="true"></div>
+
+        <div class="shop-main">
+          <div class="shop-toolbar reveal">
+            <div class="shop-search">
+              <label for="product-search" class="visually-hidden">Search products</label>
+              <svg class="shop-search__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+              <input type="search" id="product-search" name="q" placeholder="Search dummy heads, endo teeth, typodonts…" data-i18n="products.search" data-i18n-placeholder autocomplete="off" enterkeyhint="search">
+            </div>
+            <div class="shop-toolbar__actions">
+              <button type="button" class="btn btn--ghost btn--filter" id="filter-toggle" aria-expanded="false" aria-controls="filter-sidebar">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/></svg>
+                <span data-i18n="products.filter">Filter</span>
+              </button>
+              <div class="shop-sort">
+                <label for="product-sort" class="visually-hidden" data-i18n="products.sort.label">Sort by</label>
+                <select id="product-sort" name="sort" class="shop-sort__select">
+                  <option value="featured" data-i18n="products.sort.featured">Featured</option>
+                  <option value="newest" data-i18n="products.sort.newest">Newest</option>
+                  <option value="price-asc" data-i18n="products.sort.priceAsc">Price: low to high</option>
+                  <option value="price-desc" data-i18n="products.sort.priceDesc">Price: high to low</option>
+                  <option value="name-asc" data-i18n="products.sort.name">Name: A–Z</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <p class="shop-count reveal" id="products-count" aria-live="polite">Showing products</p>
+
+          <div class="products__grid products__grid--shop" id="products-grid" role="list"></div>
+
+          <div class="products-empty" id="products-empty" hidden>
+            <div class="products-empty__icon" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            </div>
+            <h2 data-i18n="products.empty.title">No models found</h2>
+            <p data-i18n="products.empty.sub">Try a different search term or category.</p>
+            <button type="button" class="btn btn--primary" id="empty-reset" data-i18n="products.clear">Clear filters</button>
+          </div>
+
+          <nav class="pagination" id="pagination" data-i18n-aria="products.pagination.label"></nav>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="logo logo--light" data-i18n-aria="nav.home">
+            <span class="logo__med">Med</span><span class="logo__factory">Factory</span>
+          </a>
+          <p data-i18n="footer.tagline">Realistic dental training models for students — practice safely before clinical work.</p>
+          <form class="newsletter" action="#" method="post" data-i18n-aria="footer.newsletter">
+            <label for="email" class="visually-hidden" data-i18n="footer.email">Email for restock alerts</label>
+            <input type="email" id="email" name="email" data-i18n-placeholder="footer.email" placeholder="Email for restock alerts" required autocomplete="email">
+            <button type="submit" class="btn btn--primary" data-i18n="footer.subscribe">Subscribe</button>
+          </form>
+        </div>
+        <nav class="footer__col" data-i18n-aria="footer.shopNav">
+          <h3 data-i18n="footer.shop">Shop</h3>
+          <ul>
+            <li><a href="products.html?category=dummy-heads" data-i18n="products.filter.dummy">Dummy Heads</a></li>
+            <li><a href="products.html?category=endo-teeth" data-i18n="products.filter.endo">Endo Teeth</a></li>
+            <li><a href="products.html?category=dental-casts" data-i18n="products.filter.casts">Dental Casts</a></li>
+            <li><a href="products.html?category=dental-kits" data-i18n="products.filter.kits">Training Kits</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" data-i18n-aria="footer.supportNav">
+          <h3 data-i18n="footer.support">Support</h3>
+          <ul>
+            <li><a href="contact.html#faq" data-i18n="nav.faq">FAQ</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+            <li><a href="contact.html#location" data-i18n="footer.shipping">Shipping</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" data-i18n-aria="footer.connectNav">
+          <h3 data-i18n="footer.connect">Connect</h3>
+          <ul>
+            <li><a href="https://wa.me/201000000000" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__payments">
+        <span data-i18n="footer.payments">We accept</span>
+        <div class="footer__payment-icons" aria-hidden="true">
+          <span class="payment-badge">Visa</span>
+          <span class="payment-badge">Mastercard</span>
+          <span class="payment-badge">Fawry</span>
+          <span class="payment-badge">Wallet</span>
+        </div>
+        <span class="footer__secure" data-i18n="trust.secure">Secure checkout</span>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 MedFactory. <span data-i18n="footer.rights">All rights reserved.</span></p>
+        <div class="footer__legal">
+          <a href="#" data-i18n="footer.privacy">Privacy</a>
+          <a href="#" data-i18n="footer.terms">Terms</a>
+          <span class="footer__currency" data-i18n-aria="footer.currency">EGP</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true" hidden>
+    <span id="toast-message">Added to cart</span>
+  </div>
+
+  <script src="i18n.js"></script>
+  <script src="theme.js"></script>
+  <script src="common.js"></script>
+  <script src="products-data.js"></script>
+  <script src="products-i18n.js"></script>
+  <script src="products.js"></script>
+</body>
+</html>
