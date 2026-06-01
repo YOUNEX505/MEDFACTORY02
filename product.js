@@ -73,15 +73,19 @@
     return product.gallery?.length ? product.gallery : [product.image];
   }
 
+  function assetUrl(src) {
+    return MF.resolveAsset(src);
+  }
+
   function toAbsoluteImageUrl(src) {
-    return new URL(src, window.location.origin).href;
+    return new URL(assetUrl(src), window.location.origin).href;
   }
 
   function setMainImage(index) {
     if (!currentProduct) return;
     const gallery = getGallery(currentProduct);
     activeImageIndex = index;
-    const src = gallery[index];
+    const src = assetUrl(gallery[index]);
     els.mainImg.src = src;
     els.mainImg.alt = `${pf(currentProduct, "name")} — ${index + 1}`;
 
@@ -102,7 +106,7 @@
       .map(
         (src, i) => `
       <button type="button" class="pdp-thumb ${i === 0 ? "is-active" : ""}" role="tab" aria-selected="${i === 0}" aria-label="View image ${i + 1}" data-index="${i}">
-        <img src="${src}" alt="" width="80" height="80" loading="lazy">
+        <img src="${assetUrl(src)}" alt="" width="80" height="80" loading="lazy">
       </button>
     `
       )
@@ -227,7 +231,7 @@
         <div class="product-card__media">
           ${badge}
           <a href="product.html?id=${p.id}" class="product-card__link">
-            <img src="${p.image}" alt="${escapeHtml(name)}" width="400" height="400" loading="lazy">
+            <img src="${assetUrl(p.image)}" alt="${escapeHtml(name)}" width="400" height="400" loading="lazy">
           </a>
         </div>
         <div class="product-card__body">

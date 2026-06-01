@@ -137,7 +137,7 @@
         <div class="product-card__media">
           ${badgeHtml}
           <a href="product.html?id=${product.id}" class="product-card__link" aria-label="View ${name}">
-            <img src="${product.image}" alt="${name}" width="400" height="400" loading="lazy">
+            <img src="${MF.resolveAsset(product.image)}" alt="${name}" width="400" height="400" loading="lazy">
           </a>
           <button type="button" class="product-card__quick-add" data-product="${name}">${addLabel}</button>
         </div>

@@ -39,6 +39,34 @@ Example product page: `http://localhost:3000/product.html?id=dh-001`
 
 Real product photos live in `images/` (sourced from your uploads).
 
+### Git / GitHub Pages
+
+Images only appear on GitHub if the `images/` folder is **committed and pushed**:
+
+```bash
+git add images/
+git add base-path.js .nojekyll
+git commit -m "Add product images and GitHub Pages asset paths"
+git push
+```
+
+In the repo: **Settings → Pages → Deploy from branch** (usually `main`, folder `/` root).
+
+For project sites (`https://USER.github.io/REPO-NAME/`), `base-path.js` sets the correct base URL so `images/*.jpg` load correctly.
+
+Required image files (referenced by the site):
+
+- `articulator.jpg`
+- `dental-casts-kit.jpg`
+- `dummy-head-open.jpg`
+- `dummy-head-skull.jpg`
+- `endo-teeth-bulk.jpg`
+- `endo-teeth-red-roots.jpg`
+- `mandible-cast.jpg`
+- `typodont-1.jpg`
+- `typodont-flatlay.jpg`
+- `typodont-open.jpg`
+
 ## Pages
 
 | Page | File |

@@ -1,0 +1,19 @@
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs & env (never commit secrets)
+*.log
+.env
+.env.*
+
+# Dependencies (if you add a build step later)
+node_modules/
+
+# Do NOT ignore images/ — product photos must be committed for GitHub Pages

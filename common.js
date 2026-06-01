@@ -4,6 +4,29 @@
 window.MedFactory = (function () {
   "use strict";
 
+  function resolveAsset(path) {
+    if (!path || /^https?:\/\//i.test(path) || path.startsWith("data:")) {
+      return path;
+    }
+
+    const base = window.MF_BASE_PATH || "";
+    const normalized = path.replace(/^\.?\//, "");
+
+    if (!base) return normalized;
+
+    return base.endsWith("/") ? base + normalized : `${base}/${normalized}`;
+  }
+
+  function fixAssetPaths() {
+    document.querySelectorAll("img[src]").forEach((img) => {
+      const src = img.getAttribute("src");
+      if (!src || /^https?:\/\//i.test(src) || src.startsWith("data:")) return;
+
+      const fixed = resolveAsset(src);
+      if (fixed !== src) img.src = fixed;
+    });
+  }
+
   const prefersReducedMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)"
   ).matches;
@@ -223,6 +246,8 @@ window.MedFactory = (function () {
   }
 
   function initShell() {
+    fixAssetPaths();
+
     if (window.MedFactoryI18n) {
       window.MedFactoryI18n.initSwitcher();
     }
@@ -254,6 +279,8 @@ window.MedFactory = (function () {
     showToast,
     addToCart,
     updateCartUI,
+    resolveAsset,
+    fixAssetPaths,
     prefersReducedMotion,
   };
 })();
